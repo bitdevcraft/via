@@ -47,15 +47,18 @@ export default function OurServices() {
       ? services
       : services.filter((service) => service.category === filter);
   return (
-    <div className="max-w-[1144px] px-6 mx-auto mb-[240px]">
+    <div
+      id="services"
+      className="max-w-[1144px] px-6 mx-auto mb-[140px] pt-[100px] "
+    >
       <h3 className="mb-[48px] text-center text-xl sm:text-3xl md:text-5xl font-semibold">
         Our Services
       </h3>
-      <p className="mb-[64px] text-center font-thin">
+      <p className="mb-[64px] text-center font-light">
         Comprehensive Digital Solutions - From Web Development to IT Security &
         Automation
       </p>
-      <div className="flex justify-between mb-[48px] flex-wrap">
+      <div className="flex justify-between mb-[48px] flex-wrap gap-[16px]">
         {categories.map((category) => (
           <button
             onClick={() => setFilter(category)}

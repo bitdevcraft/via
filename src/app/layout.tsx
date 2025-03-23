@@ -9,6 +9,7 @@ import {
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { ThemeProvider } from "next-themes";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -34,13 +35,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${montserrat.variable} ${antonSc.variable} antialiased min-w-[350px]`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,10 +1,10 @@
 export default function WhyChooseUs() {
   return (
-    <div className="max-w-[1144px] px-6  mx-auto mb-[240px]">
+    <div className="max-w-[1144px] px-6  mx-auto mb-[140px] pt-[100px] ">
       <h3 className="mb-[48px] text-center text-xl sm:text-3xl md:text-5xl font-semibold">
         Why Choose VIA?
       </h3>
-      <p className="mb-[64px] text-center font-thin">
+      <p className="mb-[64px] text-center font-light">
         Driving Success with Innovation, Security and End-to-End IT Solutions
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-8 md:grid-cols-12 gap-[32px]">

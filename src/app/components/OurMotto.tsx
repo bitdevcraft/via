@@ -1,6 +1,6 @@
 export default function OurMotto() {
   return (
-    <div className="max-w-[1144px] px-6 mx-auto mb-[240px]">
+    <div className="max-w-[1144px] px-6 mx-auto mb-[140px] pt-[100px]">
       <h3 className="pl-14 sm:pl-15 md:pl-24 font-bold text-xl sm:text-3xl md:text-5xl translate-y-[100%]">
         Our Motto
       </h3>
@@ -9,7 +9,7 @@ export default function OurMotto() {
           <LeftQuote />
         </div>
         <div className="">
-          <p className="font-bold text-5xl sm:text-7xl md:text-9xl p-6 bg-[#1a1a1a]/20">
+          <p className="font-bold text-5xl sm:text-7xl md:text-9xl p-6 bg-foreground/20">
             Turning Possibilities into Digital Realities.
           </p>
         </div>
