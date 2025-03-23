@@ -1,6 +1,5 @@
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import Link from "next/link";
 
 export default function GetInTouch() {
   return (
