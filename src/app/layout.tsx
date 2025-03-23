@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Inter,
+  Unna,
+  Cormorant_Infant,
+  Montserrat,
+  Anton_SC,
+} from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+});
+const antonSc = Anton_SC({
+  variable: "--font-anton-sc",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${montserrat.variable} ${antonSc.variable} antialiased min-w-[350px]`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
