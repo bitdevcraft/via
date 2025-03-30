@@ -12,7 +12,12 @@ export default function Footer() {
             <Map size={24} /> <p>Dubai, United Arab Emirates</p>
           </div>
           <div className="flex items-center gap-[8px]">
-            <Mail size={24} /> <p>venturesintoadvancement@gmail.com</p>
+            <Mail size={24} />{" "}
+            <p>
+              <a href="mailto:venturesintoadvancement@gmail.com">
+                venturesintoadvancement@gmail.com
+              </a>
+            </p>
           </div>
           <div className="flex items-center gap-[8px]">
             <Phone size={24} /> <p>+971 50 164 6135</p>
