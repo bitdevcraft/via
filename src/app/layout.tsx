@@ -16,6 +16,7 @@ const inter = Inter({
 const antonSc = Anton_SC({
   variable: "--font-anton-sc",
   weight: ["400"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
